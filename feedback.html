@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Hot Beans</div>
+  
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="eligibility.html">Eligibility</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  
+    <button class="apply-btn" id="applyBtn">Apply Now</button>
+            <script src="js/script.js"></script>
+  </nav>
+
+<header class="hero">
+    <h1>Share your feedback with us</h1>
+    <p>We use this feedback to improve the application process in addition to improving our website!</p>
+  </header>
+
+  <section class="feedback-hero">
+    <h1>Share Your Thoughts</h1>
+    <p>We use your feedback to improve this site and our recruitment process. Every submission is read by a real person on our team.</p>
+</section>
+
+<section class="feedback-container">
+    <h2>Website Feedback</h2>
+
+    <form class="feedback-form">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="e.g. Jamie Smith">
+
+        <label for="email">Email Address (optional)</label>
+        <input type="email" id="email" placeholder="If you’d like a reply from us">
+        <p class="note">We’ll only use this to respond to your feedback.</p>
+
+        <label for="reason">Why did you visit this site today?</label>
+        <select id="reason">
+            <option>— Select an option —</option>
+            <option>To learn about the company</option>
+            <option>To check eligibility</option>
+            <option>To view courses</option>
+            <option>To apply for a role</option>
+            <option>Just browsing</option>
+        </select>
+
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" rows="5" placeholder="What did you think of the site? What could be improved? Did you find everything you were looking for?"></textarea>
+
+        <label>Would you recommend Hot Beans Web to a friend?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="recommend"> Yes, definitely</label>
+            <label><input type="radio" name="recommend"> Maybe</label>
+            <label><input type="radio" name="recommend"> No</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+
+        <p class="privacy-note">Your feedback is completely anonymous unless you provide your email. See our Privacy Policy.</p>
+
+    </form>
+</section>
+
+<!--Footer-->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section">
+      <h3>Hot Beans Web</h3>
+      <p>©2026 hot beans. All rights reserved</p>
+  </div>
+
+  <div class="footer-section">
+    <h4>Links</h4>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="courses.html">Courses</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+
+  <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: HotbeansCompany.co.uk</p>
+      <p>Phone: +44 123 456 789</p>
+      <p>Location: Belmore St, London SW8 2JY</p>
+  </div>
+  </div>
+</footer>

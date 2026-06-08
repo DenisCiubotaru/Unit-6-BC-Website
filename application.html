@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>    
+<!--navbar-->
+<nav class="navbar">
+    <div class="logo">Hot Beans</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="eligibility.html">Eligibility</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <button class="apply-btn" id="applyBtn">Apply Now</button>
+</nav>
+
+<!--Application Form-->
+<div class="form-container">
+    <h1>Personal Details</h1>
+
+    <form id="applicationForm" action="https://formsubmit.co/20059999@student.lambeth.ac.uk" method="POST">
+        
+
+        <label>First Name</label>
+            <input type="text" id="firstName" placeholder="e.g. John" required>
+
+        <label>Last Name</label>
+            <input type="text" id="lastName" placeholder="e.g. Doe" required>
+
+        <label>Email Address</label>
+           <input type="email" id="email" placeholder="e.g. john.doe@example.com" required>
+
+        <label>Phone Number (optional)</label>
+            <input type="text" id="phone" placeholder="+44 7700 900123">
+
+        <label>Date of Birth</label>
+            <input type="date" id="dob" required>
+
+        <label>Town / City</label>
+            <input type="text" id="city" placeholder="e.g. London" required>
+
+       
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+    </form>
+
+    <p id="successMessage" class="hidden">Your application has been submitted!</p>
+</div>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+        <h3>Hot Beans Web</h3>
+        <p>©2026 hot beans. All rights reserved</p>
+    </div>
+
+    <div class="footer-section">
+    <h4>Links</h4>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="courses.html">Courses</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+
+    <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: HotbeansCompany.co.uk</p>
+        <p>Phone: +44 123 456 789</p>
+        <p>Location: Belmore St, London SW8 2JY</p>
+    </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

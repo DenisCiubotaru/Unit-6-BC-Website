@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#F28C82);
+    color: white;
+    overflow-x: hidden;
+}
+
+/*Animations*/
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp{
+    from{opacity: 0; transform: translateY(40px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+
+@keyframes popIn{
+    from {opacity: 0; transform: scale(0.8);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+.fade-in { animation: fadeIn 1.2s ease-out; }
+.slide-up { animation: slideUp 1.2s ease-out; }
+.pop-in { animation: popIn 0.8s ease-out; }
+.delay { animation-delay: 0.3s; }
+
+/*introduction area*/
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    background: #F28C82;
+    backdrop-filter: blur(6px);
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover{
+    color: grey;
+    transform: translateY(-3px);
+}
+
+
+.apply-btn{
+    background: lightblue;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apply-btn:hover{
+    background: aliceblue;
+    transform: scale(1.05);
+}
+
+
+.hero-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-video video {
+    width: 320px;        /* adjust size here */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/*Hero section*/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   /* keeps everything aligned nicely */
+    padding: 80px 40px;
+    gap: 40px;             /* adds spacing between sections */
+}
+
+
+
+.hero-text{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about{
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+.about h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+/*buttons*/
+.hero-buttons{
+    margin-bottom: 20px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary{
+    background: lightblue;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover{
+    background: aliceblue;
+    transform: translateY(-4px);
+}
+
+.btn-secondary{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover{
+    background: white;
+    color: #0a1a3a;
+    transform: translateY(-4px);
+}
+
+/*cards*/
+.hero-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-6px) scale(1.03);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer{
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+/*layout*/
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+/*all columns seperated*/
+.footer-section{
+    max-width: 250px;
+}
+
+.footer-section h4,
+.footer-section h3{
+    margin-bottom: 15px;
+}
+
+/*links*/
+.footer-section a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover{
+    color: darkgrey;
+}
